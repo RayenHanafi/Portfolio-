@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 bg-white text-black rounded;
+  }
+
+}
+@layer base {
+  p {
+    @apply text-white text-[20px];
+  }
+  * {
+    @apply text-white ;
+  }
+}
+@layer utilities {
+  
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+
+  .skill{
+    @apply flex-center mx-4;
+  }
+}
