@@ -9,13 +9,13 @@
   <body
     class="bg-[#0F0323] flex flex-col items-center justify-center px-[150px] text-white"
   >
-    <!-- Header Section -->
+    <!-- Home Section -->
     <section
-      class="flex flex-col bg-[#7B7B7B]/20 py-[20px] px-[60px] mt-[95px] rounded-[40px] w-full justify-between items-center"
+      class="flex flex-col bg-[#7B7B7B]/20 py-[20px] px-[60px] mt-[95px] rounded-[40px] w-full justify-between items-center shadow-2xl"
     >
       <!-- Navbar -->
       <div
-        class="flex flex-row justify-between items-center mb-[20px] w-full text-[20px]"
+        class="flex flex-row justify-between items-center w-full text-[20px]"
       >
         <div
           class="flex flex-row justify-between items-center w-full mr-[500px]"
@@ -29,19 +29,19 @@
         </div>
       </div>
 
-      <!-- Home Section -->
+      <!-- Who am I Section -->
       <div class="flex justify-center items-start gap-12 mt-[100px] mb-[50px]">
         <!-- Text -->
-        <div class="flex flex-col justify-start items-start mt-9">
+        <div class="flex flex-col justify-start items-start mt-14">
           <div class="text-6xl">Hi, I'm Rayen</div>
           <div class="text-4xl">ICT Student</div>
-          <p class="mt-[20px]">
+          <p class="mt-[20px] text-2xl">
             A 3rd year engineering student passioned by Cybersecurity, AI and
             everything in between, also I have a deep interest in design that's
             why I'm constantly learning, building and challenging to fulfill my
             passion.
           </p>
-          <p class="mt-[5px]">
+          <p class="mt-[5px] text-2xl">
             Welcome to my digital space where I showcase what I do, what I love,
             and where I'm headed.
           </p>
@@ -50,11 +50,7 @@
 
         <!-- Image -->
         <div>
-          <img
-            class="w-[2000px] h-auto"
-            src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-            alt="pic"
-          />
+          <img class="w-[1500px] h-auto" src="../image/hacker.png" alt="pic" />
         </div>
       </div>
     </section>
@@ -62,10 +58,10 @@
     <!-- About Section -->
     <section
       id="about"
-      class="flex flex-col items-center justify-center mt-[110px] max-w-[1000px]"
+      class="flex flex-col items-center justify-center mt-[110px] w-full"
     >
-      <div class="text-7xl mb-12">About me</div>
-      <p class="text-center">
+      <div class="title">About me</div>
+      <p class="text-center text-2xl">
         An engineering student from Tunisia, currently studying ICT engineering
         at INSAT. I've always been fascinated by how things work, especially in
         the world of cybersecurity, software, and AI. Over the past couple of
@@ -83,40 +79,30 @@
       id="skills"
       class="flex flex-col items-center justify-center mt-[110px]"
     >
-      <div class="text-7xl mb-12">Skills</div>
+      <div class="title">Skills</div>
 
       <!-- Skills Row 1 -->
       <div
         id="row1"
         class="flex flex-row justify-center items-center flex-wrap gap-6"
       >
-        <div
-          class="flex-center bg-[#7B7B7B]/20 rounded-2xl w-[80px] h-[80px] p-2"
-        >
+        <div class="skillBox">
           <img src="../image/Skills logos/Python.png" alt="Python" />
         </div>
-        <div
-          class="flex justify-center items-center bg-[#7B7B7B]/20 rounded-2xl w-[80px] h-[80px] p-2"
-        >
+        <div class="skillBox">
           <img
             class="w-[60px] h-[60px] object-contain"
             src="../image/Skills logos/HTML.png"
             alt="HTML"
           />
         </div>
-        <div
-          class="flex-center bg-[#7B7B7B]/20 rounded-2xl w-[80px] h-[80px] p-2"
-        >
+        <div class="skillBox">
           <img src="../image/Skills logos/css.png" alt="CSS" />
         </div>
-        <div
-          class="flex-center bg-[#7B7B7B]/20 rounded-2xl w-[80px] h-[80px] p-2"
-        >
+        <div class="skillBox">
           <img src="../image/Skills logos/Java.png" alt="Java" />
         </div>
-        <div
-          class="flex-center bg-[#7B7B7B]/20 rounded-2xl w-[80px] h-[80px] p-2"
-        >
+        <div class="skillBox">
           <img src="../image/Skills logos/MySql.png" alt="MySQL" />
         </div>
       </div>
@@ -125,19 +111,13 @@
         id="row2"
         class="flex flex-row justify-center items-center flex-wrap gap-6 mt-7"
       >
-        <div
-          class="flex-center bg-[#7B7B7B]/20 rounded-2xl w-[80px] h-[80px] p-2"
-        >
+        <div class="skillBox">
           <img src="../image/Skills logos/Photoshop.png" alt="Photoshop" />
         </div>
-        <div
-          class="flex-center bg-[#7B7B7B]/20 rounded-2xl w-[80px] h-[80px] p-2"
-        >
+        <div class="skillBox">
           <img src="../image/Skills logos/Figma.png" alt="Figma" />
         </div>
-        <div
-          class="flex-center bg-[#7B7B7B]/20 rounded-2xl w-[80px] h-[80px] p-2"
-        >
+        <div class="skillBox">
           <img
             class="w-[70px] h-[70px] object-contain"
             src="../image/Skills logos/IDA.png"
@@ -151,7 +131,7 @@
     <section
       class="flex flex-col justify-center items-center mt-[110px] w-full"
     >
-      <div class="text-7xl mb-12">Projects</div>
+      <div class="title">Projects</div>
 
       <!-- Project Container -->
       <div class="relative flex items-center w-full max-w-6xl">
@@ -163,8 +143,8 @@
           <div class="w-1/2 relative">
             <img
               class="w-full h-full object-cover"
-              src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600&q=80"
-              alt="BookStore Website Screenshot"
+              src="../image/books.avif"
+              alt="BookStore"
             />
           </div>
 
