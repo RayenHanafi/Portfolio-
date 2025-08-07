@@ -2,7 +2,7 @@
 node_modules/
 
 # Ignore output.css only
-./src/output.css
+src/output.css
 
 # VSCode settings
 .vscode/
