@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
+    <script src="script.js" defer></script>
     <title>Rayen Portfolio</title>
   </head>
   <body
@@ -11,46 +12,42 @@
   >
     <!-- Home Section -->
     <section
-      class="flex flex-col bg-[#7B7B7B]/20 py-[20px] px-[60px] mt-[95px] rounded-[40px] w-full justify-between items-center shadow-2xl"
+      id="home"
+      class="flex flex-col bg-[#7B7B7B]/20 py-[20px] px-[60px] mt-[95px] rounded-[40px] w-full h-[750px] shadow-2xl"
     >
       <!-- Navbar -->
-      <div
-        class="flex flex-row justify-between items-center w-full text-[20px]"
-      >
-        <div
-          class="flex flex-row justify-between items-center w-full mr-[500px]"
-        >
-          <div>Home</div>
-          <div>Projects</div>
-        </div>
-        <div class="flex flex-row justify-between items-center w-full">
-          <div>About</div>
-          <div>Contact</div>
-        </div>
+      <div class="grid grid-cols-4 w-full text-[22px] text-center">
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
       </div>
 
       <!-- Who am I Section -->
-      <div class="flex justify-center items-start gap-12 mt-[100px] mb-[50px]">
+      <div
+        class="flex justify-center items-start gap-12 mt-[60px] mb-[50px] w-full"
+      >
         <!-- Text -->
-        <div class="flex flex-col justify-start items-start mt-14">
+        <div class="w-1/2 flex flex-col justify-start items-start mt-14">
           <div class="text-6xl">Hi, I'm Rayen</div>
           <div class="text-4xl">ICT Student</div>
-          <p class="mt-[20px] text-2xl">
+          <p class="mt-[20px] text-3xl">
             A 3rd year engineering student passioned by Cybersecurity, AI and
             everything in between, also I have a deep interest in design that's
             why I'm constantly learning, building and challenging to fulfill my
             passion.
           </p>
-          <p class="mt-[5px] text-2xl">
+          <p class="mt-[5px] text-3xl">
             Welcome to my digital space where I showcase what I do, what I love,
             and where I'm headed.
           </p>
-          <button class="btn mt-5" type="button">Contact me</button>
+          <button class="btn mt-10" type="button">Contact me</button>
         </div>
 
         <!-- Image -->
-        <div>
-          <img class="w-[1500px] h-auto" src="../image/hacker.png" alt="pic" />
+        <div class="w-1/2 flex justify-center items-center">
+          <img src="../image/hacker.png" alt="pic" />
         </div>
       </div>
     </section>
@@ -58,7 +55,7 @@
     <!-- About Section -->
     <section
       id="about"
-      class="flex flex-col items-center justify-center mt-[110px] w-full"
+      class="flex flex-col items-center justify-center mt-[110px] w-[1100px]"
     >
       <div class="title">About me</div>
       <p class="text-center text-2xl">
@@ -91,7 +88,7 @@
         </div>
         <div class="skillBox">
           <img
-            class="w-[60px] h-[60px] object-contain"
+            class="w-[70px] h-[70px] object-contain"
             src="../image/Skills logos/HTML.png"
             alt="HTML"
           />
@@ -129,49 +126,202 @@
 
     <!-- Projects Section -->
     <section
+      id="projects"
       class="flex flex-col justify-center items-center mt-[110px] w-full"
     >
       <div class="title">Projects</div>
 
       <!-- Project Container -->
-      <div class="relative flex items-center w-full max-w-6xl">
-        <!-- Project Card -->
-        <div
-          class="flex w-full bg-gradient-to-br from-pink-200 via-pink-100 to-orange-100 rounded-[40px] overflow-hidden shadow-2xl"
-        >
-          <!-- Project Image Side -->
-          <div class="w-1/2 relative">
-            <img
-              class="w-full h-full object-cover"
-              src="../image/books.avif"
-              alt="BookStore"
-            />
-          </div>
+      <div class="relative w-full max-w-6xl">
+        <div class="overflow-hidden">
+          <!-- Card Slider-->
+          <div id="slider" class="flex transition-transform duration-500 gap-3">
+            <!-- BookStore -->
+            <div class="projectCard">
+              <!-- Project Image Side -->
+              <div class="w-1/2 relative">
+                <img
+                  class="w-full h-full object-cover"
+                  src="../image/books.avif"
+                  alt="BookStore"
+                />
+              </div>
 
-          <!-- Project Info Side -->
-          <div class="w-1/2 p-12 flex flex-col justify-center text-gray-800">
-            <h3 class="text-4xl font-bold mb-8 text-gray-900">
-              BookStore website
-            </h3>
+              <!-- Project Info Side -->
+              <div
+                class="w-1/2 p-12 flex flex-col justify-center text-gray-800"
+              >
+                <h3 class="text-4xl font-bold mb-8 text-gray-900">
+                  BookStore website
+                </h3>
 
-            <h4 class="text-2xl font-semibold mb-6 text-gray-800">
-              Description
-            </h4>
+                <h4 class="text-2xl font-semibold mb-6 text-gray-800">
+                  Description
+                </h4>
 
-            <p class="text-lg leading-relaxed text-gray-700">
-              A bookstore web page designed using the Symfony framework. This is
-              a full-stack web application featuring both backend and frontend
-              components for managing a bookstore. Users can browse, search, and
-              view details about books. The project demonstrates CRUD
-              operations, user authentication, and responsive design.
-            </p>
+                <p class="text-lg leading-relaxed text-gray-700">
+                  A bookstore web page designed using the Symfony framework.
+                  This is a full-stack web application featuring both backend
+                  and frontend components for managing a bookstore. Users can
+                  browse, search, and view details about books. The project
+                  demonstrates CRUD operations, user authentication, and
+                  responsive design.
+                </p>
+              </div>
+            </div>
+            <!-- BookStore -->
+            <div class="projectCard">
+              <!-- Project Image Side -->
+              <div class="w-1/2 relative">
+                <img
+                  class="w-full h-full object-cover"
+                  src="../image/hacker.png"
+                  alt="BookStore"
+                />
+              </div>
+
+              <!-- Project Info Side -->
+              <div
+                class="w-1/2 p-12 flex flex-col justify-center text-gray-800"
+              >
+                <h3 class="text-4xl font-bold mb-8 text-gray-900">
+                  BookStore website
+                </h3>
+
+                <h4 class="text-2xl font-semibold mb-6 text-gray-800">
+                  Description
+                </h4>
+
+                <p class="text-lg leading-relaxed text-gray-700">
+                  A bookstore web page designed using the Symfony framework.
+                  This is a full-stack web application featuring both backend
+                  and frontend components for managing a bookstore. Users can
+                  browse, search, and view details about books. The project
+                  demonstrates CRUD operations, user authentication, and
+                  responsive design.
+                </p>
+              </div>
+            </div>
+            <!-- BookStore -->
+            <div class="projectCard">
+              <!-- Project Image Side -->
+              <div class="w-1/2 relative">
+                <img
+                  class="w-full h-full object-cover"
+                  src="../image/books.avif"
+                  alt="BookStore"
+                />
+              </div>
+
+              <!-- Project Info Side -->
+              <div
+                class="w-1/2 p-12 flex flex-col justify-center text-gray-800"
+              >
+                <h3 class="text-4xl font-bold mb-8 text-gray-900">
+                  BookStore website
+                </h3>
+
+                <h4 class="text-2xl font-semibold mb-6 text-gray-800">
+                  Description
+                </h4>
+
+                <p class="text-lg leading-relaxed text-gray-700">
+                  A bookstore web page designed using the Symfony framework.
+                  This is a full-stack web application featuring both backend
+                  and frontend components for managing a bookstore. Users can
+                  browse, search, and view details about books. The project
+                  demonstrates CRUD operations, user authentication, and
+                  responsive design.
+                </p>
+              </div>
+            </div>
+            <!-- BookStore -->
+            <div class="projectCard">
+              <!-- Project Image Side -->
+              <div class="w-1/2 relative">
+                <img
+                  class="w-full h-full object-cover"
+                  src="../image/Bookshop web page/Bookshop screenshot.png"
+                  alt="BookStore"
+                />
+              </div>
+
+              <!-- Project Info Side -->
+              <div
+                class="w-1/2 p-12 flex flex-col justify-center text-gray-800"
+              >
+                <h3 class="text-4xl font-bold mb-8 text-gray-900">
+                  BookStore website
+                </h3>
+
+                <h4 class="text-2xl font-semibold mb-6 text-gray-800">
+                  Description
+                </h4>
+
+                <p class="text-lg leading-relaxed text-gray-700">
+                  A bookstore web page designed using the Symfony framework.
+                  This is a full-stack web application featuring both backend
+                  and frontend components for managing a bookstore. Users can
+                  browse, search, and view details about books. The project
+                  demonstrates CRUD operations, user authentication, and
+                  responsive design.
+                </p>
+              </div>
+            </div>
+            <!-- BookStore -->
+            <div class="projectCard">
+              <!-- Project Image Side -->
+              <div class="w-1/2 relative">
+                <img
+                  class="w-full h-full object-cover"
+                  src="../image/books.avif"
+                  alt="BookStore"
+                />
+              </div>
+
+              <!-- Project Info Side -->
+              <div
+                class="w-1/2 p-12 flex flex-col justify-center text-gray-800"
+              >
+                <h3 class="text-4xl font-bold mb-8 text-gray-900">
+                  BookStore website
+                </h3>
+
+                <h4 class="text-2xl font-semibold mb-6 text-gray-800">
+                  Description
+                </h4>
+
+                <p class="text-lg leading-relaxed text-gray-700">
+                  A bookstore web page designed using the Symfony framework.
+                  This is a full-stack web application featuring both backend
+                  and frontend components for managing a bookstore. Users can
+                  browse, search, and view details about books. The project
+                  demonstrates CRUD operations, user authentication, and
+                  responsive design.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
-        <!-- Navigation Arrow -->
-        <div
-          class="absolute right-[-30px] bg-gray-700 hover:bg-gray-600 rounded-full w-16 h-16 flex items-center justify-center cursor-pointer transition-colors duration-200 shadow-lg"
-        >
+        <!-- Navigation Arrow left-->
+        <div id="prevBtn" class="chevronBtn">
+          <svg
+            class="w-8 h-8 text-white"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M15 19l-7-7 7-7"
+            ></path>
+          </svg>
+        </div>
+        <!-- Navigation Arrow Right-->
+        <div id="nextBtn" class="chevronBtn">
           <svg
             class="w-8 h-8 text-white"
             fill="none"

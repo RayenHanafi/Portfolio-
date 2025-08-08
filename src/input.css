@@ -5,7 +5,7 @@
     @apply text-gray-900 bg-gradient-to-r from-pink-200 via-pink-100 to-orange-100 
            hover:bg-gradient-to-br 
            focus:ring-4 focus:outline-none focus:ring-pink-300 dark:focus:ring-pink-800 
-           font-medium rounded-2xl text-[18px] px-5 py-2.5 text-center me-2 mb-2 
+           font-medium rounded-2xl text-[20px] px-5 py-2.5 text-center me-2 mb-2 
            transition-transform duration-200 ease-in-out;
   }
 
@@ -13,7 +13,7 @@
     @apply scale-105;
   }
   .skillBox {
-    @apply bg-[#7B7B7B]/20 rounded-2xl w-[80px] h-[80px] p-2 transition-transform duration-200 ease-in-out;
+    @apply  bg-[#7B7B7B]/20 rounded-2xl w-[90px] h-[90px] p-2 transition-transform duration-200 ease-in-out;
   }
 
   .skillBox:hover {
@@ -23,5 +23,29 @@
 
   .title{
     @apply text-7xl mb-12 text-white;
+  }
+
+  .projectCard {
+    @apply flex flex-shrink-0 w-[1100px] h-[500px] bg-gradient-to-br from-pink-200 via-pink-100 to-orange-100 rounded-[40px] overflow-hidden shadow-2xl;
+  }
+
+  .chevronBtn{
+    @apply absolute bg-gray-700 hover:bg-gray-600 rounded-full w-16 h-16 flex items-center justify-center cursor-pointer transition-colors duration-200 shadow-lg top-1/2 transform -translate-y-1/2;
+  }
+
+  /* Position the navigation buttons */
+  #prevBtn {
+    @apply left-[-30px];
+  }
+
+  #nextBtn {
+    @apply right-[-30px];
+  }
+
+}
+
+@layer utilities {
+  .flex-center {
+    @apply flex items-center justify-center;
   }
 }
