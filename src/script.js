@@ -43,6 +43,13 @@ prevBtn.addEventListener("click", () => {
     }
 });
 
+const contactBtn = document.getElementById("contactBtn");
+
+contactBtn.addEventListener("click", () => {
+    const contactSection = document.getElementById("contact");
+    contactSection.scrollIntoView({ behavior: "smooth" });
+});
+
 // Handle window resize
 window.addEventListener('resize', updateSlider);
 

@@ -4,7 +4,7 @@
   .btn {
     @apply text-gray-900 bg-gradient-to-r from-pink-200 via-pink-100 to-orange-100 
            hover:bg-gradient-to-br 
-           focus:ring-4 focus:outline-none focus:ring-pink-300 dark:focus:ring-pink-800 
+           focus:ring-4 focus:outline-none  
            font-medium rounded-2xl text-[20px] px-5 py-2.5 text-center me-2 mb-2 
            transition-transform duration-200 ease-in-out;
   }
