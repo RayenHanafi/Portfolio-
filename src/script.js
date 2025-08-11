@@ -5,17 +5,24 @@ const nextBtn = document.getElementById("nextBtn");
 let currentCardIndex = 0;
 const totalNbCards = slider.children.length;
 
-const cardWidth = document.querySelector(".projectCard").offsetWidth;
+function getCardWidth() {
+    return document.querySelector(".projectCard").offsetWidth + 12; // +12 for gap-3 (0.75rem * 16px)
+}
 
-function updateBtn (){
+function updateSlider() {
+    const cardWidth = getCardWidth();
+    slider.style.transform = `translateX(-${currentCardIndex * cardWidth}px)`;
+}
+
+function updateBtn() {
     if(currentCardIndex === 0){
         prevBtn.classList.add("hidden");
-    }else{
+    } else {
         prevBtn.classList.remove("hidden");
     }
     if(currentCardIndex === totalNbCards - 1){
         nextBtn.classList.add("hidden");
-    }else{
+    } else {
         nextBtn.classList.remove("hidden");
     }
 }
@@ -23,7 +30,7 @@ function updateBtn (){
 nextBtn.addEventListener("click", () => {
     if(currentCardIndex < totalNbCards - 1){
         currentCardIndex++;
-         slider.style.transform = `translateX(-${currentCardIndex * cardWidth}px)`;
+        updateSlider();
         updateBtn();
     }
 });
@@ -31,9 +38,12 @@ nextBtn.addEventListener("click", () => {
 prevBtn.addEventListener("click", () => {
     if(currentCardIndex > 0){
         currentCardIndex--;
-        slider.style.transform = `translateX(-${currentCardIndex * cardWidth }px)`;
+        updateSlider();
         updateBtn();
     }
 });
+
+// Handle window resize
+window.addEventListener('resize', updateSlider);
 
 updateBtn(); // Initial call to set button visibility

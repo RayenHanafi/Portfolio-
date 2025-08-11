@@ -8,46 +8,63 @@
     <title>Rayen Portfolio</title>
   </head>
   <body
-    class="bg-[#0F0323] flex flex-col items-center justify-center px-[150px] text-white"
+    class="bg-[#0F0323] flex flex-col justify-center items-center px-4 sm:px-8 lg:px-[150px] text-white"
   >
     <!-- Home Section -->
     <section
       id="home"
-      class="flex flex-col bg-[#7B7B7B]/20 py-[20px] px-[60px] mt-[95px] rounded-[40px] w-full h-[750px] shadow-2xl"
+      class="flex flex-col bg-[#7B7B7B]/20 py-5 sm:py-[20px] px-4 sm:px-8 lg:px-[60px] mt-8 sm:mt-[95px] rounded-[40px] w-full max-w-7xl min-h-auto lg:h-auto shadow-2xl"
     >
       <!-- Navbar -->
-      <div class="grid grid-cols-4 w-full text-[22px] text-center">
+      <div
+        class="grid grid-cols-2 sm:grid-cols-4 w-full text-lg sm:text-[22px] text-center gap-4 sm:gap-0"
+      >
         <a href="#home">Home</a>
         <a href="#projects">Projects</a>
-
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </div>
 
       <!-- Who am I Section -->
       <div
-        class="flex justify-center items-start gap-12 mt-[60px] mb-[50px] w-full"
+        class="flex flex-col lg:flex-row justify-center items-center lg:items-start gap-8 lg:gap-12 mt-8 sm:mt-[60px] mb-8 sm:mb-[50px] w-full flex-1"
       >
         <!-- Text -->
-        <div class="w-1/2 flex flex-col justify-start items-start mt-14">
-          <div class="text-6xl">Hi, I'm Rayen</div>
-          <div class="text-4xl">ICT Student</div>
-          <p class="mt-[20px] text-3xl">
+        <div
+          class="w-full lg:w-1/2 flex flex-col justify-center lg:justify-start items-center lg:items-start text-center lg:text-left order-2 lg:order-1 lg:mt-14"
+        >
+          <div class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
+            Hi, I'm Rayen
+          </div>
+          <div class="text-xl sm:text-2xl md:text-3xl lg:text-4xl">
+            ICT Student
+          </div>
+          <p
+            class="mt-4 lg:mt-[20px] text-base sm:text-lg md:text-2xl lg:text-3xl leading-relaxed"
+          >
             A 3rd year engineering student passioned by Cybersecurity, AI and
             everything in between, also I have a deep interest in design that's
             why I'm constantly learning, building and challenging to fulfill my
             passion.
           </p>
-          <p class="mt-[5px] text-3xl">
+          <p
+            class="mt-2 lg:mt-[5px] text-base sm:text-lg md:text-2xl lg:text-3xl leading-relaxed"
+          >
             Welcome to my digital space where I showcase what I do, what I love,
             and where I'm headed.
           </p>
-          <button class="btn mt-10" type="button">Contact me</button>
+          <button class="btn mt-6 lg:mt-10" type="button">Contact me</button>
         </div>
 
         <!-- Image -->
-        <div class="w-1/2 flex justify-center items-center">
-          <img src="../image/hacker.png" alt="pic" />
+        <div
+          class="w-full lg:w-1/2 flex justify-center items-center order-1 lg:order-2 pt-10"
+        >
+          <img
+            src="../image/hacker.png"
+            alt="pic"
+            class="w-full max-w-sm lg:max-w-none h-auto"
+          />
         </div>
       </div>
     </section>
@@ -55,10 +72,10 @@
     <!-- About Section -->
     <section
       id="about"
-      class="flex flex-col items-center justify-center mt-[110px] w-[1100px]"
+      class="flex flex-col items-center justify-center mt-16 sm:mt-[110px] w-full max-w-5xl px-4"
     >
       <div class="title">About me</div>
-      <p class="text-center text-2xl">
+      <p class="text-center text-lg sm:text-xl lg:text-2xl leading-relaxed">
         An engineering student from Tunisia, currently studying ICT engineering
         at INSAT. I've always been fascinated by how things work, especially in
         the world of cybersecurity, software, and AI. Over the past couple of
@@ -68,20 +85,20 @@
         in social media design using Figma, I aim to be a successful freelancer
         alongside my cybersecurity career goal.
       </p>
-      <button class="btn mt-9">View Resume</button>
+      <button class="btn mt-6 sm:mt-9">View Resume</button>
     </section>
 
     <!-- Skills Section -->
     <section
       id="skills"
-      class="flex flex-col items-center justify-center mt-[110px]"
+      class="flex flex-col items-center justify-center mt-16 sm:mt-[110px] px-4"
     >
       <div class="title">Skills</div>
 
       <!-- Skills Row 1 -->
       <div
         id="row1"
-        class="flex flex-row justify-center items-center flex-wrap gap-6"
+        class="flex flex-row justify-center items-center flex-wrap gap-3 sm:gap-6 max-w-4xl"
       >
         <div class="skillBox">
           <img src="../image/Skills logos/Python.png" alt="Python" />
@@ -106,7 +123,7 @@
       <!-- Skills Row 2 -->
       <div
         id="row2"
-        class="flex flex-row justify-center items-center flex-wrap gap-6 mt-7"
+        class="flex flex-row justify-center items-center flex-wrap gap-3 sm:gap-6 mt-4 sm:mt-7 max-w-4xl"
       >
         <div class="skillBox">
           <img src="../image/Skills logos/Photoshop.png" alt="Photoshop" />
@@ -127,7 +144,7 @@
     <!-- Projects Section -->
     <section
       id="projects"
-      class="flex flex-col justify-center items-center mt-[110px] w-full"
+      class="flex flex-col justify-center items-center mt-16 sm:mt-[110px] w-full px-4"
     >
       <div class="title">Projects</div>
 
@@ -139,7 +156,7 @@
             <!-- BookStore -->
             <div class="projectCard">
               <!-- Project Image Side -->
-              <div class="w-1/2 relative">
+              <div class="w-full md:w-1/2 relative h-48 md:h-auto">
                 <img
                   class="w-full h-full object-cover"
                   src="../image/books.avif"
@@ -149,17 +166,23 @@
 
               <!-- Project Info Side -->
               <div
-                class="w-1/2 p-12 flex flex-col justify-center text-gray-800"
+                class="w-full md:w-1/2 p-6 sm:p-8 lg:p-12 flex flex-col justify-center text-gray-800"
               >
-                <h3 class="text-4xl font-bold mb-8 text-gray-900">
+                <h3
+                  class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6 lg:mb-8 text-gray-900"
+                >
                   BookStore website
                 </h3>
 
-                <h4 class="text-2xl font-semibold mb-6 text-gray-800">
+                <h4
+                  class="text-lg sm:text-xl lg:text-2xl font-semibold mb-3 sm:mb-4 lg:mb-6 text-gray-800"
+                >
                   Description
                 </h4>
 
-                <p class="text-lg leading-relaxed text-gray-700">
+                <p
+                  class="text-sm sm:text-base lg:text-lg leading-relaxed text-gray-700"
+                >
                   A bookstore web page designed using the Symfony framework.
                   This is a full-stack web application featuring both backend
                   and frontend components for managing a bookstore. Users can
@@ -172,7 +195,7 @@
             <!-- BookStore -->
             <div class="projectCard">
               <!-- Project Image Side -->
-              <div class="w-1/2 relative">
+              <div class="w-full md:w-1/2 relative h-48 md:h-auto">
                 <img
                   class="w-full h-full object-cover"
                   src="../image/hacker.png"
@@ -182,17 +205,23 @@
 
               <!-- Project Info Side -->
               <div
-                class="w-1/2 p-12 flex flex-col justify-center text-gray-800"
+                class="w-full md:w-1/2 p-6 sm:p-8 lg:p-12 flex flex-col justify-center text-gray-800"
               >
-                <h3 class="text-4xl font-bold mb-8 text-gray-900">
+                <h3
+                  class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6 lg:mb-8 text-gray-900"
+                >
                   BookStore website
                 </h3>
 
-                <h4 class="text-2xl font-semibold mb-6 text-gray-800">
+                <h4
+                  class="text-lg sm:text-xl lg:text-2xl font-semibold mb-3 sm:mb-4 lg:mb-6 text-gray-800"
+                >
                   Description
                 </h4>
 
-                <p class="text-lg leading-relaxed text-gray-700">
+                <p
+                  class="text-sm sm:text-base lg:text-lg leading-relaxed text-gray-700"
+                >
                   A bookstore web page designed using the Symfony framework.
                   This is a full-stack web application featuring both backend
                   and frontend components for managing a bookstore. Users can
@@ -205,7 +234,7 @@
             <!-- BookStore -->
             <div class="projectCard">
               <!-- Project Image Side -->
-              <div class="w-1/2 relative">
+              <div class="w-full md:w-1/2 relative h-48 md:h-auto">
                 <img
                   class="w-full h-full object-cover"
                   src="../image/books.avif"
@@ -215,17 +244,23 @@
 
               <!-- Project Info Side -->
               <div
-                class="w-1/2 p-12 flex flex-col justify-center text-gray-800"
+                class="w-full md:w-1/2 p-6 sm:p-8 lg:p-12 flex flex-col justify-center text-gray-800"
               >
-                <h3 class="text-4xl font-bold mb-8 text-gray-900">
+                <h3
+                  class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6 lg:mb-8 text-gray-900"
+                >
                   BookStore website
                 </h3>
 
-                <h4 class="text-2xl font-semibold mb-6 text-gray-800">
+                <h4
+                  class="text-lg sm:text-xl lg:text-2xl font-semibold mb-3 sm:mb-4 lg:mb-6 text-gray-800"
+                >
                   Description
                 </h4>
 
-                <p class="text-lg leading-relaxed text-gray-700">
+                <p
+                  class="text-sm sm:text-base lg:text-lg leading-relaxed text-gray-700"
+                >
                   A bookstore web page designed using the Symfony framework.
                   This is a full-stack web application featuring both backend
                   and frontend components for managing a bookstore. Users can
@@ -238,7 +273,7 @@
             <!-- BookStore -->
             <div class="projectCard">
               <!-- Project Image Side -->
-              <div class="w-1/2 relative">
+              <div class="w-full md:w-1/2 relative h-48 md:h-auto">
                 <img
                   class="w-full h-full object-cover"
                   src="../image/Bookshop web page/Bookshop screenshot.png"
@@ -248,17 +283,23 @@
 
               <!-- Project Info Side -->
               <div
-                class="w-1/2 p-12 flex flex-col justify-center text-gray-800"
+                class="w-full md:w-1/2 p-6 sm:p-8 lg:p-12 flex flex-col justify-center text-gray-800"
               >
-                <h3 class="text-4xl font-bold mb-8 text-gray-900">
+                <h3
+                  class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6 lg:mb-8 text-gray-900"
+                >
                   BookStore website
                 </h3>
 
-                <h4 class="text-2xl font-semibold mb-6 text-gray-800">
+                <h4
+                  class="text-lg sm:text-xl lg:text-2xl font-semibold mb-3 sm:mb-4 lg:mb-6 text-gray-800"
+                >
                   Description
                 </h4>
 
-                <p class="text-lg leading-relaxed text-gray-700">
+                <p
+                  class="text-sm sm:text-base lg:text-lg leading-relaxed text-gray-700"
+                >
                   A bookstore web page designed using the Symfony framework.
                   This is a full-stack web application featuring both backend
                   and frontend components for managing a bookstore. Users can
@@ -271,7 +312,7 @@
             <!-- BookStore -->
             <div class="projectCard">
               <!-- Project Image Side -->
-              <div class="w-1/2 relative">
+              <div class="w-full md:w-1/2 relative h-48 md:h-auto">
                 <img
                   class="w-full h-full object-cover"
                   src="../image/books.avif"
@@ -281,17 +322,23 @@
 
               <!-- Project Info Side -->
               <div
-                class="w-1/2 p-12 flex flex-col justify-center text-gray-800"
+                class="w-full md:w-1/2 p-6 sm:p-8 lg:p-12 flex flex-col justify-center text-gray-800"
               >
-                <h3 class="text-4xl font-bold mb-8 text-gray-900">
+                <h3
+                  class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6 lg:mb-8 text-gray-900"
+                >
                   BookStore website
                 </h3>
 
-                <h4 class="text-2xl font-semibold mb-6 text-gray-800">
+                <h4
+                  class="text-lg sm:text-xl lg:text-2xl font-semibold mb-3 sm:mb-4 lg:mb-6 text-gray-2800"
+                >
                   Description
                 </h4>
 
-                <p class="text-lg leading-relaxed text-gray-700">
+                <p
+                  class="text-sm sm:text-base lg:text-lg leading-relaxed text-gray-700"
+                >
                   A bookstore web page designed using the Symfony framework.
                   This is a full-stack web application featuring both backend
                   and frontend components for managing a bookstore. Users can
@@ -307,7 +354,7 @@
         <!-- Navigation Arrow left-->
         <div id="prevBtn" class="chevronBtn">
           <svg
-            class="w-8 h-8 text-white"
+            class="w-6 h-6 sm:w-8 sm:h-8 text-white"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -323,7 +370,7 @@
         <!-- Navigation Arrow Right-->
         <div id="nextBtn" class="chevronBtn">
           <svg
-            class="w-8 h-8 text-white"
+            class="w-6 h-6 sm:w-8 sm:h-8 text-white"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -340,12 +387,15 @@
     </section>
     <!-- Contact Section -->
     <section
-      class="flex flex-col justify-center item-center mt-[110px] w-[1100px]"
+      id="contact"
+      class="flex flex-col justify-center items-center mt-16 sm:mt-[110px] w-full max-w-6xl px-4"
     >
       <div class="title text-center">Contact</div>
-      <div class="flex justify-center items-center gap-5 mt-[50px] w-full">
+      <div
+        class="flex flex-col lg:flex-row justify-center items-start gap-8 lg:gap-20 mt-8 sm:mt-[50px] w-full"
+      >
         <form
-          class="w-1/2 bg-[#7B7B7B]/20 bg- flex flex-col gap-5 p-10 rounded-4xl"
+          class="w-full lg:w-1/2 bg-[#7B7B7B]/20 flex flex-col gap-4 sm:gap-5 p-6 sm:p-10 rounded-4xl"
         >
           <label for="name">Name</label>
           <input
@@ -370,13 +420,78 @@
           ></textarea>
           <button class="btn" type="submit">Send Message</button>
         </form>
-        <div class="w-1/2 h-1/2 flex flex-col justify-center items-center">
-          <h3 class="text-4xl mb-8 text-white">BookStore website</h3>
-          <div class="grid grid-cols-3">
-            <!-- lehna beh naamlo parti li feha les contact teii choof l figma aml talla chat welle claud bch tchof the bext way to code it  -->
+        <div class="w-full lg:w-1/2 flex flex-col justify-center items-start">
+          <h3 class="text-2xl sm:text-3xl lg:text-4xl mb-6 sm:mb-8 text-white">
+            Message Me On
+          </h3>
+          <div class="flex flex-col gap-4 sm:gap-5 w-full">
+            <!-- Email -->
+            <div class="flex items-center">
+              <img
+                class="w-10 h-10 sm:w-[50px] sm:h-[50px] object-contain"
+                src="../image/icone/envelope-solid.svg"
+                alt="email icon"
+              />
+              <p class="text-sm sm:text-base lg:text-lg px-3 sm:px-5 break-all">
+                rayen.hanafi@insat.ucar.tn
+              </p>
+            </div>
+            <!-- LinkedIn -->
+            <div class="flex items-center">
+              <a href="https://linkedin.com/in/rayen-hanafi"
+                ><img
+                  class="w-10 h-10 sm:w-[50px] sm:h-[50px] object-contain"
+                  src="../image/icone/linkedin-brands.svg"
+                  alt="LinkedIn icon"
+              /></a>
+              <p class="text-sm sm:text-base lg:text-lg px-3 sm:px-5 break-all">
+                linkedin.com/in/rayen-hanafi/
+              </p>
+            </div>
+            <!-- Discord -->
+            <div class="flex items-center">
+              <img
+                class="w-10 h-10 sm:w-[50px] sm:h-[50px] object-contain"
+                src="../image/icone/discord-brands.svg"
+                alt="Discord icon"
+              />
+              <p class="text-sm sm:text-base lg:text-lg px-3 sm:px-5">
+                rayen02
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- Footer -->
+    <footer
+      class="mt-16 sm:mt-[110px] w-full max-w-7xl flex flex-col items-center justify-center gap-4 sm:gap-5 mb-6 px-4"
+    >
+      <div
+        class="w-full h-[3px] sm:h-[5px] rounded-4xl bg-gradient-to-r from-pink-200 via-pink-100 to-orange-100 hover:bg-gradient-to-br"
+      ></div>
+      <div
+        class="flex flex-col sm:flex-row justify-between items-center w-full px-2 gap-4 sm:gap-0"
+      >
+        <p class="text-sm sm:text-base lg:text-lg text-center sm:text-left">
+          © 2023 2025 All Right Reserved Rayen Hanafi Portofilo
+        </p>
+        <div class="flex justify-center items-center gap-3">
+          <a href="https://github.com/RayenHanafi/">
+            <img
+              class="w-8 h-8 sm:w-[40px] sm:h-[40px] object-contain"
+              src="../image/icone/github-brands.svg"
+              alt="GitHub"
+            />
+          </a>
+          <a href="https://linkedin.com/in/rayen-hanafi"
+            ><img
+              class="w-8 h-8 sm:w-[40px] sm:h-[40px] object-contain"
+              src="../image/icone/linkedin-brands.svg"
+              alt="LinkedIn icon"
+          /></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
