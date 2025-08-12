@@ -9,3 +9,6 @@ src/output.css
 
 # Environment files
 .env
+
+#Ignore a .txt file
+*.txt
