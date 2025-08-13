@@ -50,6 +50,24 @@ contactBtn.addEventListener("click", () => {
     contactSection.scrollIntoView({ behavior: "smooth" });
 });
 
+function sendMail(){
+    const parms = {
+        name: document.getElementById("name").value,
+        email : document.getElementById("email").value,
+        message : document.getElementById("message").value,
+    }
+    emailjs.send("service_85c160n", "template_9xf9scp", parms).then(() => {
+        alert("Message sent successfully!");
+        },
+        (error) => {
+        alert("Failed to send message. Please try again later.");
+        console.error("EmailJS error:", error);
+        }
+    );
+
+}
+
+
 // Handle window resize
 window.addEventListener('resize', updateSlider);
 

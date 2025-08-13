@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
     <script src="script.js" defer></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "ZRxjR0Vcc6fHfIK39",
+        });
+      })();
+    </script>
     <title>Rayen Portfolio</title>
   </head>
   <body
@@ -397,10 +408,12 @@
         class="flex flex-col lg:flex-row justify-center items-start gap-8 lg:gap-20 mt-8 sm:mt-[50px] w-full"
       >
         <form
+          id="contact-form"
           class="w-full lg:w-1/2 bg-[#7B7B7B]/20 flex flex-col gap-4 sm:gap-5 p-6 sm:p-10 rounded-4xl"
         >
           <label for="name">Name</label>
           <input
+            id="name"
             class="p-3 rounded-lg bg-[#0F0323] text-white"
             type="text"
             placeholder="Your Name"
@@ -408,6 +421,7 @@
           />
           <label for="email">Email</label>
           <input
+            id="email"
             class="p-3 rounded-lg bg-[#0F0323] text-white"
             type="email"
             placeholder="Your Email"
@@ -415,12 +429,15 @@
           />
           <label for="Message">Message</label>
           <textarea
+            id="message"
             class="p-3 rounded-lg bg-[#0F0323] text-white"
             rows="4"
             placeholder="Your Message"
             required
           ></textarea>
-          <button class="btn" type="submit">Send Message</button>
+          <button class="btn" type="button" onclick="sendMail()">
+            Send Message
+          </button>
         </form>
         <div class="w-full lg:w-1/2 flex flex-col justify-center items-start">
           <h3 class="text-2xl sm:text-3xl lg:text-4xl mb-6 sm:mb-8 text-white">
